@@ -39,6 +39,7 @@ void Interpreter::loop()
     int n = 0;
     unsigned char tmp = 0;
     int lvl = 0;
+    int tmp_n = 0;
 
     for (int i = 0; i < _commands.size(); ++i)
     {
@@ -128,7 +129,9 @@ void Interpreter::loop()
                 dump(tmp);
                 break;
             case '*':
-                n = _memory[n];
+                tmp_n = _memory[n];
+                _memory[n] = 0;
+                n = tmp_n;
                 break;
             case '/':
                 ++i;
