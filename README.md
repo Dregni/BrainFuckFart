@@ -22,6 +22,8 @@ To run the interpreter, the command is as follows :
 ./bff [brainfuckfart file]
 ```
 
+For Documentation on BFF refer to the [BrainFuckFart.md]() file
+
 ### Prerequisites
 
 You need to have cmake & make installed.
