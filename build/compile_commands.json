@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/dregni/Documents/Prog/CPP/brainfuckfart/build",
+  "command": "/usr/bin/g++   -I/home/dregni/Documents/Prog/CPP/brainfuckfart/includes -I/home/dregni/Documents/Prog/CPP/brainfuckfart/sources  -g   -o CMakeFiles/bff.dir/main.cpp.o -c /home/dregni/Documents/Prog/CPP/brainfuckfart/main.cpp",
+  "file": "/home/dregni/Documents/Prog/CPP/brainfuckfart/main.cpp"
+},
+{
+  "directory": "/home/dregni/Documents/Prog/CPP/brainfuckfart/build",
+  "command": "/usr/bin/g++   -I/home/dregni/Documents/Prog/CPP/brainfuckfart/includes -I/home/dregni/Documents/Prog/CPP/brainfuckfart/sources  -g   -o CMakeFiles/bff.dir/sources/Interpreter.cpp.o -c /home/dregni/Documents/Prog/CPP/brainfuckfart/sources/Interpreter.cpp",
+  "file": "/home/dregni/Documents/Prog/CPP/brainfuckfart/sources/Interpreter.cpp"
+}
+]

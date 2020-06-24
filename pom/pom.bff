@@ -1,0 +1,88 @@
+> first cell to 0 to get back later
+
+>
+++++++++++ [ < +++++++ > - ] < + > G
+>
+++++++++++ [ < +++++++ > - ] < + > G
+>
+< ++++++++++ > / \n /
+>
+> separate
+
+++++++++++ [ < ++++++++ > - ] P
+>
+++++++++++ [ < ++++++++++ > - ] < ++++++++ > l
+>
+++++++++++ [ < +++++++++++ > - ] < +++++++ > u
+>
+++++++++++ [ < +++++++++++ > - ] < +++++ > s
+>
+< ++++++++++ > / \n /
+>
+> separate
+
+++++++++++ [ < +++++++ > - ] < +++++++ > M
+>
+++++++++++ [ < +++++++++++ > - ] < + > o
+>
+++++++++++ [ < ++++++++++ > - ] < +++++ > i
+>
+++++++++++ [ < +++++++++++ > - ] n
+>
+++++++++++ [ < +++++++++++ > - ] < +++++ > s
+>
+< ++++++++++ > / \n /
+> separate
+
+/{ Print data
+    [<] [<] [<] [<] [<] / go back to the start overlooking separations /
+    [>.] print "GG"
+    [>.] print "Plus"
+    [>.] print "Moins"
+}/
+
+? random
+
+>>>>>!
+[
+    [|-]< [|-]< [|-]< [|-]< [|-]
+    <
+    { copy current 2 cells further using 3 cells
+        [ - > + > + << ] copy cell 1 to 2 and 3 destroying 1
+        >
+        [ - < + > ] / move cell 2 to 1 /
+        <
+    }
+    >
+    ; input a number
+
+    { copy current 2 cells further using 4 cells
+        [ - >> + > + <<< ] copy cell 1 to 3 and 4
+        >>>
+        [ - <<< + >>> ] / move cell 4 to 1 /
+        <
+    }
+    [ - < | - > ] substract copy of input to copy of random
+    [ > ] << getting back to the copy of random
+
+    >>> ++ <<< putting 2 to the last cell to use it as an exit condition to the game when the number is found
+    ( >> + > - < << ) if a minus b is zero add one to the flag and decrement the winning flag
+    >
+    ( > ++ > - < < ) if a minus b didn t left anything in b add two to the flag and decrement the winning flag
+    >
+    ^ store flag to temp
+
+    <<<<< go back to data
+
+    { go to the desired location
+    [
+        [|-] / empties current cell before leaving /
+        [<] go back to an earlier empty cell
+        v-^ load temp decrement it and upload it back
+    ]
+    }
+
+    [ . > ] / print answer to user guess /
+    * go back to the zero cell
+    [>] skip GG [>] skip Plus [>] skip Moins >>>>>>!
+]

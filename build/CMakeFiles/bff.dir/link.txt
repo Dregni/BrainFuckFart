@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/bff.dir/main.cpp.o CMakeFiles/bff.dir/sources/Interpreter.cpp.o  -o bff 

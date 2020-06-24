@@ -1,0 +1,3 @@
+/home/dregni/Documents/Prog/CPP/brainfuckfart/build/CMakeFiles/rebuild_cache.dir
+/home/dregni/Documents/Prog/CPP/brainfuckfart/build/CMakeFiles/edit_cache.dir
+/home/dregni/Documents/Prog/CPP/brainfuckfart/build/CMakeFiles/bff.dir

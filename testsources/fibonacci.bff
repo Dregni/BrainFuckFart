@@ -1,0 +1,8 @@
++ > + <
+[
+    ^ > / upload a and move to b /
+    [ - < + > ] add b to a
+    v load old a to b
+    < / move to a /
+    :
+]
